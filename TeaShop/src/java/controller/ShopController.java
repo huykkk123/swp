@@ -37,6 +37,7 @@ public class ShopController extends HttpServlet {
         session.setAttribute("listProduct", listProduct);
         session.setAttribute("listCategory", listCategory);
         request.getRequestDispatcher("view/homepage/shop.jsp").forward(request, response);
+        //hello
     } 
 
     
