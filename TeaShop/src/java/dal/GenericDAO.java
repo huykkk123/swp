@@ -37,6 +37,7 @@ public abstract class GenericDAO<T> extends DBContext {
      * @param clazz: tên bảng bạn muốn get dữ liệu về
      * @return list
      */
+    
     protected List<T> queryGenericDAO(Class<T> clazz) {
         List<T> result = new ArrayList<>();
         try {
