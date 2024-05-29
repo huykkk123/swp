@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/F:/Swp/Group6-SE1847-Tea-Store-master/SWP391-G6-Tea-shop/TeaShop/src/java/entity/Blog.java</file>
+            <file>file:/F:/Swp/Group6-SE1847-Tea-Store-master/SWP391-G6-Tea-shop/TeaShop/web/view/homepage/home.jsp</file>
+            <file>file:/F:/Swp/Group6-SE1847-Tea-Store-master/SWP391-G6-Tea-shop/TeaShop/src/java/controller/BlogController.java</file>
+            <file>file:/F:/Swp/Group6-SE1847-Tea-Store-master/SWP391-G6-Tea-shop/TeaShop/web/view/homepage/blog.jsp</file>
+            <file>file:/F:/Swp/Group6-SE1847-Tea-Store-master/SWP391-G6-Tea-shop/TeaShop/web/view/homepage/blogDetail.jsp</file>
+            <file>file:/F:/Swp/Group6-SE1847-Tea-Store-master/SWP391-G6-Tea-shop/TeaShop/src/java/dal/BlogDAO.java</file>
+        </group>
     </open-files>
 </project-private>

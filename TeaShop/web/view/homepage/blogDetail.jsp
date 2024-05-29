@@ -57,7 +57,7 @@
 
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="home" class="navbar-brand"><h1 class="text-primary display-6">TeaShop</h1></a>
+                    <a href="home" class="navbar-brand"><h1 class="text-primary display-6">Dreamy Coffee</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -79,7 +79,7 @@
                             <a href="contact.jsp" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="d-flex m-3 me-0">
-                            <a href="#" class="position-relative me-4 my-auto">
+                            <a href="cart" class="position-relative me-4 my-auto">
                                 <i class="fa fa-shopping-bag fa-2x"></i>
                                 <!--                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>-->
                             </a>
@@ -108,78 +108,35 @@
         <!-- Single Page Header End -->
 
 
-        <!-- Blog Start-->
-        <div class="container-fluid fruite py-5">
+        <!-- Single Blog Start -->
+        <div class="container-fluid py-5 mt-5">
             <div class="container py-5">
-                <!--   Search  :           
-                <div class="position-relative mx-auto">
-                                            <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
-                                            <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-center h-100" style="top: 0; right: 25%;">Submit Now</button>
-                                        </div>
-                -->
-                <h1 class="mb-4">Tin Tức & Sự Kiện</h1>
-                <div class="row g-4">
-                    <div class="col-lg-12">
+                <div class="">
+                    <c:set var="b" value="${requestScope.blog}"/>
 
-                        <form action="blogdetail" method ="get">
-                            <div class="row g-4">
 
-                                <div class="col-lg-3">
-                                    <div class="row g-4">
-                                        <div class="col-lg-12">
-                                            <div class="mb-3">
-                                                <h4>Bài viết mới</h4>
-                                                <c:forEach items="${listBlog}" var="b">
-                                                    <ul class="list-styled fruite-categorie">
-                                                        <li>
-                                                            <div class="d-flex justify-content-between fruite-name">
-                                                                <a href="blogdetail?bid=${b.getId()}"><i class="fas fa-alt me-2"></i>${b.getBlog_name()}</a>
 
-                                                            </div>
-                                                            <i class="fas fa-alt me-2"></i>${b.getCreated_at()}
-                                                        </li>
-                                                    </ul>
-                                                </c:forEach>
-                                            </div>
-                                        </div>
 
-                                    </div>
-                                </div>
-                                <div class="col-lg-9">
-                                    <div class="row g-4 justify-content-center">
-                                        <c:forEach items="${listBlog}" var="b">
-                                            <div class="col-md-6 col-lg-6 col-xl-4">
-
-                                                <div class="rounded position-relative fruite-item">
-                                                    <a href="blogdetail?bid=${b.getId()}">
-                                                        <div class="fruite-img">
-                                                            <img src=${b.getImg()} class="img-fluid w-100 rounded-top" alt="">
-                                                        </div>
-                                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Like</div>
-                                                        <div class="p-4  border-top-0  rounded-bottom">
-                                                            <h4>${b.getBlog_name()}</h4>
-
-                                                            <!--                                                <div class="d-flex justify-content-between flex-lg-wrap">
-                                                                                                                
-                                                                                                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                                                                            </div>-->
-                                                        </div>
-                                                    </a>
-                                                </div>
-
-                                            </div>
-                                        </c:forEach>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                    <div class=" border rounded">
+                        <a href="#">
+                            <img src=${b.getImg()} class="img-fluid rounded" alt="Image"/>
+                        </a>
                     </div>
-                </div>
 
+
+
+                    <h4 class="fw-bold mb-3">${b.getBlog_name()}</h4>
+
+                    <pre class="mb-4 pre">${b.getContent()}</pre>
+
+
+
+
+
+                </div>
             </div>
         </div>
-        <!-- Blog End-->
+        <!-- Single Blog End -->
 
 
         <!-- Footer Start -->

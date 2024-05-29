@@ -18,14 +18,14 @@
                                 <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
                             </div>-->
                         </div>
-                        <div class="col-lg-3">
+<!--                        <div class="col-lg-3">
                             <div class="d-flex justify-content-end pt-3">
                                 <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
                                 <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 <div class="row g-5">
@@ -67,8 +67,7 @@
                             <p>Address: số 1 , Tân Xã, Thạch Hòa, Thạch Thất, Hòa Lạc</p>
                             <p>Email: huydxhe172399@fpt.edu.vn</p>
                             <p>Phone: +0123 4567 8910</p>
-                            <p>Payment : quét qr code theo hướng dẫn </p>
-                            <img src="${pageContext.request.contextPath}/img/payment.png" class="img-fluid" alt="">
+                            
                         </div>
                     </div>
                 </div>

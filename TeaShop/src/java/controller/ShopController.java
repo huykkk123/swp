@@ -5,8 +5,8 @@
 
 package controller;
 
-import dal.implement.CategoryDAO;
-import dal.implement.ProductDAO;
+import dal.CategoryDAO;
+import dal.ProductDAO;
 import entity.Category;
 import entity.Product;
 import java.io.IOException;
